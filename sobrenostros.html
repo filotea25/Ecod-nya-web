@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Sobre Nosotros | EcoDÜnya</title>
+
+  <style>
+    /* Animación logo */
+    @keyframes fadeSlide {
+      0% { opacity: 0; transform: translateY(-30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes float {
+      0%,100% { transform: translateY(0); }
+      50% { transform: translateY(-4px); }
+    }
+    /*el logo*/
+    .logo-anim {
+      animation: fadeSlide 1s ease-out forwards, float 3s ease-in-out infinite;
+    }
+  </style>
+</head>
+
+<body class="bg-white">
+
+  <!-- HEADER -->
+  <header class="w-full h-[180px] bg-gradient-to-r from-teal-400 to-teal-700 
+                 text-white rounded-bl-[60px] 
+                 grid grid-cols-3 grid-rows-2 px-8 py-6">
+
+    <!-- Botón volver -->
+    <div class="col-start-1 row-start-1 place-self-start">
+      <a href="../index.html"
+         class="bg-white text-teal-700 px-5 py-2 rounded-full shadow-md 
+                hover:bg-teal-100 transition duration-300">
+        ← Volver
+      </a>
+    </div>
+
+    <!-- Logo centrado -->
+    <div class="col-span-3 row-start-2 place-self-center text-center">
+      <h1 class="text-3xl md:text-4xl font-bold tracking-wide logo-anim">
+        EcoDÜnya
+      </h1>
+    </div>
+
+  </header>
+
+  <!-- MAIN -->
+  <main class="bg-white">
+
+  <!-- HERO CENTRAL -->
+  <section class="min-h-[70vh] flex items-center justify-center px-6">
+
+    <div class="text-center max-w-4xl">
+
+      <h2 class="text-4xl md:text-5xl font-bold text-teal-800 mb-6">
+        Construimos un futuro sin plástico
+      </h2>
+
+      <p class="text-lg md:text-xl text-gray-600 leading-relaxed mb-10">
+        En EcoDÜnya trabajamos para reducir la huella ambiental a través 
+        de productos sostenibles, educación ecológica y tecnología innovadora. 
+        Promovemos un consumo consciente que protege nuestros océanos 
+        y transforma la manera en la que vivimos.
+      </p>
+
+      <!-- BLOQUES IMPACTO -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
+
+        <div class="bg-teal-50 p-6 rounded-2xl shadow-md hover:shadow-xl transition">
+          <h3 class="text-3xl font-bold text-teal-700">+10K</h3>
+          <p class="text-gray-600 mt-2">Productos sostenibles vendidos</p>
+        </div>
+
+        <div class="bg-teal-50 p-6 rounded-2xl shadow-md hover:shadow-xl transition">
+          <h3 class="text-3xl font-bold text-teal-700">100%</h3>
+          <p class="text-gray-600 mt-2">Compromiso con el planeta</p>
+        </div>
+
+        <div class="bg-teal-50 p-6 rounded-2xl shadow-md hover:shadow-xl transition">
+          <h3 class="text-3xl font-bold text-teal-700">Global</h3>
+          <p class="text-gray-600 mt-2">Impacto en comunidades costeras</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- SECCIÓN CONTÁCTANOS DESTACADA -->
+  <section class="bg-gradient-to-r from-teal-500 to-teal-700 py-20 px-6">
+
+    <div class="max-w-4xl mx-auto text-center text-white">
+
+      <h2 class="text-3xl md:text-4xl font-bold mb-6">
+        ¿Quieres formar parte del cambio?
+      </h2>
+
+      <p class="text-lg md:text-xl mb-8 opacity-90">
+        Estamos abiertos a colaboraciones, propuestas sostenibles 
+        y personas que quieran marcar la diferencia. 
+        Si compartes nuestra visión, queremos escucharte.
+      </p>
+
+      <div class="flex flex-col md:flex-row justify-center gap-6">
+
+        <a href="mailto:info@ecodunya.com"
+           class="bg-white text-teal-700 px-8 py-3 rounded-full font-semibold 
+                  shadow-lg hover:bg-teal-100 transition duration-300">
+          Contáctanos
+        </a>
+
+        <a href="#"
+           class="border border-white px-8 py-3 rounded-full font-semibold 
+                  hover:bg-white hover:text-teal-700 transition duration-300">
+          Colaborar con nosotros
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</main>
+
+  <!-- FOOTER -->
+<footer class="bg-teal-50 mt-20 py-12">
+
+  <div class="max-w-6xl mx-auto px-6 text-center">
+
+    <h3 class="text-2xl md:text-3xl font-bold text-teal-800 mb-8">
+      Síguenos en nuestras redes sociales
+    </h3>
+
+    <div class="flex justify-center items-center gap-8 text-3xl text-teal-700">
+
+      <!-- Gmail -->
+      <a href="mailto:info@ecodunya.com"
+         class="hover:text-teal-900 hover:scale-110 transition duration-300">
+        <i class="fa-regular fa-envelope"></i>
+      </a>
+
+      <!-- Instagram -->
+      <a href="#"
+         class="hover:text-teal-900 hover:scale-110 transition duration-300">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+
+      <!-- Twitter -->
+      <a href="#"
+         class="hover:text-teal-900 hover:scale-110 transition duration-300">
+        <i class="fa-brands fa-x-twitter"></i>
+      </a>
+
+      <!-- Facebook -->
+      <a href="#"
+         class="hover:text-teal-900 hover:scale-110 transition duration-300">
+        <i class="fa-brands fa-facebook"></i>
+      </a>
+
+      <!-- TikTok -->
+      <a href="#"
+         class="hover:text-teal-900 hover:scale-110 transition duration-300">
+        <i class="fa-brands fa-tiktok"></i>
+      </a>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+</body>
+</html>

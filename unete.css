@@ -1,0 +1,166 @@
+/* =========================
+   INTRO
+========================= */
+
+.intro {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.intro h2 {
+    font-size: 42px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #0f3d3e;
+    animation: slideDown 1s ease-out forwards;
+}
+
+/* Animación */
+@keyframes slideDown {
+    0% {
+        transform: translateY(-60px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* =========================
+   GRID ACCIONES
+========================= */
+
+.acciones {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr;
+    margin-bottom: 80px;
+}
+
+/* Escritorio */
+@media(min-width:768px){
+    .acciones {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* =========================
+   TARJETAS ECO MODERNAS
+========================= */
+
+.tarjeta {
+    position: relative;
+    height: 260px;
+    border-radius: 22px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    padding: 25px;
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+
+    /* Glass elegante */
+    backdrop-filter: blur(6px);
+    border: 1px solid rgba(255,255,255,0.4);
+
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+    transition: all 0.4s ease;
+}
+
+/* Overlay verde eco */
+.tarjeta::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to top,
+        rgba(15, 61, 62, 0.85),
+        rgba(15, 61, 62, 0.3)
+    );
+}
+
+/* Texto encima */
+.tarjeta h3 {
+    position: relative;
+    z-index: 1;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.4;
+    transition: transform 0.3s ease;
+}
+
+/* Hover premium */
+.tarjeta:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 25px 55px rgba(0,0,0,0.25);
+}
+
+.tarjeta:hover h3 {
+    transform: translateY(-5px);
+}
+
+/* =========================
+   IMÁGENES
+========================= */
+
+.tarj1 { background-image: url(../images/bigData.jpg); }
+.tarj2 { background-image: url(../images/Limpiar-el-mar-n.jpg); }
+.tarj3 { background-image: url(../images/carbonoazul.jpg); }
+.tarj4 { background-image: url(../images/mareasInoovacion.jpg); }
+.tarj5 { background-image: url(../images/empoderando.jpg); }
+.tarj6 { background-image: url(../images/carbonoazul.jpg); }
+
+/* =========================
+   MAPA
+========================= */
+
+.mapa {
+    margin: 100px 0;
+    text-align: center;
+}
+
+.mapa h2 {
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    color: #0f3d3e;
+}
+
+.mapa-contenedor {
+    width: 90%;
+    max-width: 1100px;
+    height: 450px;
+    margin: 0 auto;
+
+    border-radius: 25px;
+    overflow: hidden;
+
+    /* Glass eco */
+    background: rgba(255,255,255,0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.5);
+
+    box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+}
+
+.mapa-contenedor iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* =========================
+   RESPONSIVE MEJORADO
+========================= */
+
+@media(min-width:1024px){
+    .intro h2 {
+        font-size: 48px;
+    }
+
+    .tarjeta {
+        height: 300px;
+    }
+}
