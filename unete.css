@@ -106,12 +106,12 @@
    IMÁGENES
 ========================= */
 
-.tarj1 { background-image: url(../images/bigData.jpg); }
-.tarj2 { background-image: url(../images/Limpiar-el-mar-n.jpg); }
-.tarj3 { background-image: url(../images/carbonoazul.jpg); }
-.tarj4 { background-image: url(../images/mareasInoovacion.jpg); }
-.tarj5 { background-image: url(../images/empoderando.jpg); }
-.tarj6 { background-image: url(../images/carbonoazul.jpg); }
+.tarj1 { background-image: url(./bigData.jpg); }
+.tarj2 { background-image: url(./Limpiar-el-mar-n.jpg); }
+.tarj3 { background-image: url(./carbonoazul.jpg); }
+.tarj4 { background-image: url(./mareasInoovacion.jpg); }
+.tarj5 { background-image: url(./empoderando.jpg); }
+.tarj6 { background-image: url(./carbonoazul.jpg); }
 
 /* =========================
    MAPA
@@ -164,3 +164,4 @@
         height: 300px;
     }
 }
+
