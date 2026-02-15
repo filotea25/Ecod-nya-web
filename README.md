@@ -20,8 +20,8 @@ This website promotes conscious consumption and environmental protection through
 
 ## 🚀 Live Demo
 
-(Here I will add the Vercel link soon)
+##   Vercel link
 
----
+https://ecod-nya-web.vercel.app/
 
 Created by Filotea 💚
