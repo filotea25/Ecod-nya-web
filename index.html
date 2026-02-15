@@ -1,244 +1,141 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="output.css">
-    <title>Pagina principal Ecco Occean</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoDünya | Salvemos el planeta</title>
+
+  <!-- Tailwind compilado -->
+  <link rel="stylesheet" href="output.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
-<body>
 
-    <header class="relative min-h-screen bg-gradient-to-br from-teal-400 via-teal-500 to-emerald-700 text-white overflow-hidden flex flex-col">
+<body class="font-sans bg-white">
 
-    <header class="bg-gradient-to-r from-teal-400 to-teal-700 text-white h-[400px] rounded-bl-[80px] 
-                        flex flex-col">
-        <nav class="flex justify-between p-24 py-10">
-            <div class="flex items-end gap-14 ">
-                <p class="text-4xl">EcoDünya</p>
-                <ul class="flex gap-4"><!--este flex los ha colocado todos en fila-->
-                    <li class="hover:text-green-800 hover:text-[20px] active:text-amber-950 focus:text-violet-700 font-bold"><a href="./html/Inicio.html">Inicio</a></li>
-                    <li class="hover:text-green-800 hover:text-[20px] active:text-amber-950 focus:text-violet-700 font-bold"><a href="./html/simulador.html">Simulador de Huella</a></li>
-                    <li class="hover:text-green-800 hover:text-[20px] active:text-amber-950 focus:text-violet-700 font-bold"><a href="./html/unete.html">Únete</a></li>
-                     <li class="hover:text-green-800 hover:text-[20px] active:text-amber-950 focus:text-violet-700 font-bold"><a href="./html/nuestrosProductos.html">Nuestros Productos</a></li>
-                </ul>
-            </div>
-            <div class="flex gap-8">
-                <button class="rounded-full  hover:bg-green-800
-                                active:bg-green-400
-                                focus:border-b-amber-900
-                             focus:shadow-amber-950">
-            Regístrate
-                </button>
-                <button class="bg-white text-green-600 w-32 py-2 rounded-full font-bold  hover:bg-green-800
-                            active:bg-green-400
-                            hover:text-white
-                        focus:border-b-amber-900
-                        focus:shadow-amber-950">Inicia Sesión</button>
-            </div>
-        </nav>
-        <h1 class="text-center text-5xl mt-10">UNA INICIATIVA PARA CUIDAR DE NUESTROS MARES.</h1>
-    <h2 class="text-center mt-5 font-bold">Juntos salvemos nuestro planeta</h2>
-
+  <!-- ================= HEADER / HERO ================= -->
+  <header class="relative min-h-screen bg-gradient-to-br from-teal-400 via-teal-500 to-emerald-700 text-white overflow-hidden flex flex-col">
 
     <!-- Formas decorativas -->
     <div class="absolute -bottom-20 -left-20 w-96 h-96 bg-white/10 rounded-full blur-3xl"></div>
     <div class="absolute top-0 right-0 w-80 h-80 bg-teal-300/20 rounded-full blur-3xl"></div>
 
+    <!-- NAVBAR -->
+    <nav class="flex justify-between items-center px-6 md:px-10 py-6 max-w-7xl mx-auto w-full relative z-10">
+      
+      <p class="text-3xl font-bold tracking-wide cursor-pointer transition duration-300 
+                hover:-translate-y-1 hover:scale-105 
+                hover:drop-shadow-[0_10px_15px_rgba(255,255,255,0.3)]">
+        EcoDünya
+      </p>
 
-    <!-- NAV -->
-    <nav class="flex justify-between items-center px-10 py-8 max-w-7xl mx-auto w-full">
-        
-        <p class="text-3xl font-bold tracking-wide cursor-pointer 
-                  transition duration-300 
-                  hover:-translate-y-2 hover:scale-105 
-                  hover:drop-shadow-[0_10px_15px_rgba(255,255,255,0.3)]">
-            EcoDünya
-        </p>
+      <ul class="hidden md:flex gap-8 font-semibold">
+        <li><a href="./html/sobrenostros.html" class="hover:text-emerald-200 transition">Sobre Nosotros</a></li>
+        <li><a href="./html/simulador.html" class="hover:text-emerald-200 transition">Simulador</a></li>
+        <li><a href="./html/unete.html" class="hover:text-emerald-200 transition">Únete</a></li>
+        <li><a href="./html/nuestrosProductos.html" class="hover:text-emerald-200 transition">Productos</a></li>
+      </ul>
 
-        <ul class="hidden md:flex gap-8 font-semibold">
-            <li class="hover:text-green-900 transition cursor-pointer"><a href="./html/sobrenostros.html">Sobre Nosotros</a></li>
-            <li class="hover:text-green-900 transition cursor-pointer"><a href="./html/simulador.html">Simulador</a></li>
-            <li class="hover:text-green-900 transition cursor-pointer"><a href="./html/unete.html">Únete</a></li>
-            <li class="hover:text-green-900 transition cursor-pointer"><a href="./html/nuestrosProductos.html">Productos</a></li>
-        </ul>
-
-        <div class="flex gap-4">
-            <button class="px-5 py-2 rounded-full border border-white/40 backdrop-blur-md 
-                           hover:bg-white/20 transition">
-                Regístrate
-            </button>
-            <button class="px-5 py-2 rounded-full bg-white text-teal-700 font-bold 
-                           shadow-lg hover:scale-105 transition">
-                Inicia Sesión
-            </button>
-        </div>
+      <div class="flex gap-4">
+        <button class="px-5 py-2 rounded-full border border-white/40 backdrop-blur-md hover:bg-white/20 transition">
+          Regístrate
+        </button>
+        <button class="px-5 py-2 rounded-full bg-white text-teal-700 font-bold shadow-lg hover:scale-105 transition">
+          Inicia Sesión
+        </button>
+      </div>
     </nav>
 
+    <!-- HERO CONTENT -->
+    <div class="flex-1 flex items-center relative z-10">
+      <div class="max-w-7xl mx-auto px-6 md:px-10 flex flex-col md:flex-row items-center gap-16 w-full">
+        
+        <!-- Texto -->
+        <div class="md:w-1/2 space-y-6">
+          <h1 class="text-5xl md:text-6xl font-extrabold leading-tight">
+            Salvemos el planeta <br>
+            <span class="text-emerald-200">juntos.</span>
+          </h1>
 
-    <div class="flex-1 flex items-center">
-        <div class="max-w-7xl mx-auto px-10 flex flex-col md:flex-row items-center gap-16 w-full relative z-10">
-            
-            <!-- Texto -->
-            <div class="md:w-1/2 space-y-6">
-                <h1 class="text-5xl md:text-6xl font-extrabold leading-tight">
-                    Salvemos el planeta <br>
-                    <span class="text-emerald-200">juntos.</span>
-                </h1>
+          <p class="text-white/90 text-lg md:text-xl max-w-lg">
+            Una iniciativa global para proteger océanos, bosques y el futuro de nuestra generación.
+          </p>
 
-                <p class="text-white/90 text-lg md:text-xl max-w-lg">
-                    Una iniciativa global para proteger océanos, bosques y el futuro de nuestra generación.
-                </p>
+          <div class="flex gap-4 pt-4">
+            <button class="bg-white text-teal-700 px-8 py-3 rounded-full font-bold shadow-xl hover:scale-105 transition duration-300">
+              Dona ahora
+            </button>
 
-                <div class="flex gap-4 pt-4">
-                    <button class="bg-white text-teal-700 px-8 py-3 rounded-full font-bold 
-                                   shadow-xl hover:scale-105 transition duration-300">
-                        Dona ahora
-                    </button>
-
-                    <button class="border border-white px-8 py-3 rounded-full 
-                                   hover:bg-white/20 transition duration-300">
-                        Aprende más
-                    </button>
-                </div>
-            </div>
-
-            <!-- Imagen -->
-            <div class="md:w-1/2">
-                <img src="./images/planmano.jpg"
-                     class="rounded-3xl shadow-2xl 
-                            hover:scale-105 transition duration-500 
-                            w-full object-cover">
-            </div>
-
+            <button class="border border-white px-8 py-3 rounded-full hover:bg-white/20 transition duration-300">
+              Aprende más
+            </button>
+          </div>
         </div>
-    </div>
 
-</header>
-
-<section class="relative bg-gradient-to-br from-white to-teal-50 py-20 overflow-hidden">
-
-  <div class="absolute -top-20 -right-20 w-72 h-72 bg-teal-200/30 rounded-full blur-3xl"></div>
-
-  <div class="max-w-6xl mx-auto px-6 text-center relative z-10">
-
-    <h2 class="text-3xl md:text-4xl font-bold text-teal-800 mb-4">
-      Conecta con EcoDünya
-    </h2>
-
-    <p class="text-gray-600 text-lg mb-12 max-w-2xl mx-auto">
-      Síguenos en nuestras redes sociales y forma parte de la comunidad que
-      está transformando el futuro del planeta.
-    </p>
-
-
-    <div class="flex justify-center gap-10 text-2xl md:text-3xl">
-
-   
-      <a href="mailto:info@ecodunya.com"
-         class="w-16 h-16 flex items-center justify-center 
-                bg-white rounded-full shadow-lg
-                text-teal-700
-                hover:bg-teal-600 hover:text-white
-                hover:scale-110 transition duration-300">
-        <i class="fa-regular fa-envelope"></i>
-      </a>
-
-      <!-- Instagram -->
-      <a href="#"
-         class="w-16 h-16 flex items-center justify-center 
-                bg-white rounded-full shadow-lg
-                text-teal-700
-                hover:bg-teal-600 hover:text-white
-                hover:scale-110 transition duration-300">
-        <i class="fa-brands fa-instagram"></i>
-      </a>
-
-      <!-- Twitter -->
-      <a href="#"
-         class="w-16 h-16 flex items-center justify-center 
-                bg-white rounded-full shadow-lg
-                text-teal-700
-                hover:bg-teal-600 hover:text-white
-                hover:scale-110 transition duration-300">
-        <i class="fa-brands fa-x-twitter"></i>
-      </a>
-
-      <!-- Facebook -->
-      <a href="#"
-         class="w-16 h-16 flex items-center justify-center 
-                bg-white rounded-full shadow-lg
-                text-teal-700
-                hover:bg-teal-600 hover:text-white
-                hover:scale-110 transition duration-300">
-        <i class="fa-brands fa-facebook"></i>
-      </a>
-
-      <!-- TikTok -->
-      <a href="#"
-         class="w-16 h-16 flex items-center justify-center 
-                bg-white rounded-full shadow-lg
-                text-teal-700
-                hover:bg-teal-600 hover:text-white
-                hover:scale-110 transition duration-300">
-        <i class="fa-brands fa-tiktok"></i>
-      </a>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<footer class="bg-teal-700 text-white py-6">
-  <div class="max-w-6xl mx-auto px-6 text-center text-sm opacity-80">
-    © 2026 EcoDünya · Construyendo un planeta sostenible
-  </div>
-</footer>
-
-         <button class=" bg-white text-green-600 w-32 py-2 rounded-full
-                        hover:bg-green-800
-                            active:bg-green-400
-                            hover:text-white
-                        focus:border-b-amber-900
-                        focus:shadow-amber-950"
-                        >
-                        Dona
-        </button>
-        <button class="w-32 py-2 rounded-full border
-         hover:bg-green-800
-          active:bg-green-400
-           focus:border-b-amber-900
-            focus:shadow-amber-950" >Aprende más</button>
-    
-    </div>
-       
-    </header>
-    <section class="my-8 px-8 py-12 flex items-center  justify-center">
-        <h2 class="text-center text-3xl font-bold mb-38 m-auto">Garantizando un futuro mejor</h2>
-        <div class="w-1/2">
-            <article>
-                <h3 class="text-xl font-bold my-8">Introducing an extensible editor</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Maiores ullam atque eius facilis quasi iste ducimus distinctio,
-                     id delectus molestias labore deserunt,
-                     quos perspiciatis autem doloremque nemo libero eum minus!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Maiores ullam atque eius facilis quasi iste ducimus distinctio,
-                     id delectus molestias labore deserunt,
-                     quos perspiciatis autem doloremque nemo libero eum minus!
-                    </p>
-            </article>
-            
+        <!-- Imagen -->
+        <div class="md:w-1/2">
+          <img src="./images/planmano.jpg"
+               alt="Mano sosteniendo el planeta"
+               class="rounded-3xl shadow-2xl hover:scale-105 transition duration-500 w-full object-cover">
         </div>
-    </section>
-    <section>
-        <iframe src="./html/nuestrosProductos.html" frameborder="0"></iframe>
-    </section>
 
+      </div>
+    </div>
 
+  </header>
+
+  <!-- ================= SECCIÓN REDES ================= -->
+  <section class="relative bg-gradient-to-br from-white to-teal-50 py-20 overflow-hidden">
+
+    <div class="absolute -top-20 -right-20 w-72 h-72 bg-teal-200/30 rounded-full blur-3xl"></div>
+
+    <div class="max-w-6xl mx-auto px-6 text-center relative z-10">
+
+      <h2 class="text-3xl md:text-4xl font-bold text-teal-800 mb-4">
+        Conecta con EcoDünya
+      </h2>
+
+      <p class="text-gray-600 text-lg mb-12 max-w-2xl mx-auto">
+        Síguenos en nuestras redes sociales y forma parte de la comunidad que está transformando el futuro del planeta.
+      </p>
+
+      <div class="flex justify-center gap-8 text-2xl md:text-3xl">
+
+        <a href="mailto:info@ecodunya.com"
+           class="w-16 h-16 flex items-center justify-center bg-white rounded-full shadow-lg text-teal-700 hover:bg-teal-600 hover:text-white hover:scale-110 transition duration-300">
+          <i class="fa-regular fa-envelope"></i>
+        </a>
+
+        <a href="#" class="w-16 h-16 flex items-center justify-center bg-white rounded-full shadow-lg text-teal-700 hover:bg-teal-600 hover:text-white hover:scale-110 transition duration-300">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+
+        <a href="#" class="w-16 h-16 flex items-center justify-center bg-white rounded-full shadow-lg text-teal-700 hover:bg-teal-600 hover:text-white hover:scale-110 transition duration-300">
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
+
+        <a href="#" class="w-16 h-16 flex items-center justify-center bg-white rounded-full shadow-lg text-teal-700 hover:bg-teal-600 hover:text-white hover:scale-110 transition duration-300">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+
+        <a href="#" class="w-16 h-16 flex items-center justify-center bg-white rounded-full shadow-lg text-teal-700 hover:bg-teal-600 hover:text-white hover:scale-110 transition duration-300">
+          <i class="fa-brands fa-tiktok"></i>
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="bg-teal-700 text-white py-6">
+    <div class="max-w-6xl mx-auto px-6 text-center text-sm opacity-80">
+      © 2026 EcoDünya · Construyendo un planeta sostenible
+    </div>
+  </footer>
 
 </body>
-
 </html>
+
